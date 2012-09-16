@@ -386,7 +386,8 @@ if (enchant.gl != undefined) {
                     
                     var info = faceText.match(/([A-Za-z]+)\(([\w\s\-\.\(\)]+?)\)/gi);
                     var face = { vNum: vertex_num };
-                    
+                    console.dir(faceText);
+                    console.dir(info);
                     for (var j=0,len=info.length; j<len; ++j) {
                         var m = info[j].match(/([A-Za-z]+)\(([\w\s\-\.\(\)]+?)\)/);
                         var key = m[1].toLowerCase();
