@@ -164,13 +164,11 @@ if( enchant.gl != undefined ){
 			 *	メッシュへコンバート
 			 *	root:ルートオブジェクト
 			 *	materials:マテリアルリスト
-             */
+			 */
             convert:function(root,materials){
 
 				//不可視設定の場合は処理をスキップ
 				if( this.visible == 0 ){
-					//MIKOTO用情報取得
-					//this.convertAnchorData();
 					return;
 				}
 
@@ -199,7 +197,7 @@ if( enchant.gl != undefined ){
 			 */
 			convertWithMaterial:function(material,num){
 				var vertices = [];	//　頂点
-				var normals  = [];  //　面法線
+				var normals  = [];	//　面法線
 				var uv       = [];	//　テクスチャＵＶ
 				var indices  = [];	//　インデックス
 				var colors   = [];	//　頂点色
